@@ -1,4 +1,4 @@
-package br.univlle.sistemabillyepantcho.controller;
+package br.univille.sistemabillyepantcho.controller;
 
 import java.util.HashMap;
 
@@ -9,17 +9,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/")
-public class HomeController {
+public class HomeController{
 
     @GetMapping()
-    public ModelAndView index (){
+    public ModelAndView index(){
         var nome = "matheus";
         var sobrenome = " tavares";
         var mapadados = new HashMap<String, String>();
         mapadados.put("nomenatela", nome);
         mapadados.put("sobrenomenatela", sobrenome);
         return new ModelAndView("home/index",mapadados);
-
     }
     
 }

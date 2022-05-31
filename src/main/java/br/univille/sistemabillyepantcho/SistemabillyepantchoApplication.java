@@ -1,4 +1,4 @@
-package br.univlle.sistemabillyepantcho;
+package br.univille.sistemabillyepantcho;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

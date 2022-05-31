@@ -1,4 +1,4 @@
-package br.univlle.sistemabillyepantcho.entity;
+package br.univille.sistemabillyepantcho.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +15,7 @@ public class Veiculo {
     private String marca;
     private String cor;
     private float kilometragem;
+    
     public long getId() {
         return id;
     }

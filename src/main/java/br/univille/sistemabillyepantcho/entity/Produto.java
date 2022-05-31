@@ -1,11 +1,15 @@
-package br.univlle.sistemabillyepantcho.entity;
+package br.univille.sistemabillyepantcho.entity;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class Produto {
@@ -18,7 +22,9 @@ public class Produto {
     private String marcaProduto;
     private int codigoProduto;
     private float valorProduto;
-    private ArrayList<String> compatibilidade = new ArrayList<>();
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name ="produto_id")
+    private List<Carro> compatibilidade = new ArrayList<>();
     
     public long getId() {
         return id;
@@ -50,10 +56,10 @@ public class Produto {
     public void setValorProduto(float valorProduto) {
         this.valorProduto = valorProduto;
     }
-    public ArrayList<String> getCompatibilidade() {
+    public List<Carro> getCompatibilidade() {
         return compatibilidade;
     }
-    public void setCompatibilidade(ArrayList<String> compatibilidade) {
+    public void setCompatibilidade(List<Carro> compatibilidade) {
         this.compatibilidade = compatibilidade;
     }
 
