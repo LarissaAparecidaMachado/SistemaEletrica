@@ -8,6 +8,8 @@ import br.univille.sistemabillyepantcho.entity.Cliente;
 public interface ClienteService {
 
     public List<ClienteDTO>getAll();
+
+    public ClienteDTO save(ClienteDTO cliente);
     
     
 }

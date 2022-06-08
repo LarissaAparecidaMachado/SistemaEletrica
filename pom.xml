@@ -12,7 +12,7 @@
 	<artifactId>sistemabillyepantcho</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sistemabillyepantcho</name>
-	<deion>Demo project for Spring Boot</deion>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
