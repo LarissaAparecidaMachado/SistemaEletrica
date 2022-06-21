@@ -40,9 +40,12 @@
                     <td th:text="${umCliente.endereco}"></td>
                     <td th:text="${umCliente.bairro}"></td>
                     <td th:text="${umCliente.cidade}"></td>
+                    <td> <a href= 
+                        "@{'/cliente/alterar' + {um cliente.id}}"
+                         class="btn btn-primary">Alterar </a></td>
                 </tr>
             </tbody>
-        </table>
+
     </div>
 
     <div th:include="layout :: footer">(footer)</div>

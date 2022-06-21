@@ -8,7 +8,7 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.univlle</groupId>
+	<groupId>br.univille</groupId>
 	<artifactId>sistemabillyepantcho</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sistemabillyepantcho</name>
